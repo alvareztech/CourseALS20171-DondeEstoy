@@ -2,7 +2,7 @@
 <resources>
 
     <string name="google_key" templateMergeStrategy="preserve" translatable="false">
-        AIzaSyByh-rsnZ3IWnINlOYZNnDeNTy2IultEWc
+        TU_API_KEY_AQUI
     </string>
 
 </resources>
