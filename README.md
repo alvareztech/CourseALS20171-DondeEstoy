@@ -1,6 +1,11 @@
 # CourseALS20171 - ¿Dónde Estoy?
 
-Aplicación de Google Places.`
+Aplicación de Google Places en Android.
+
+## Ver
+
+[Lab: Obtener lugares donde se encuentre y descargar fotografía de un lugar con Google Places en Android](https://beta.alvarez.tech/labs/obtener-lugares-actuales-descargar-foto-google-places-android)
+
 
 ### Google Api Client
 
