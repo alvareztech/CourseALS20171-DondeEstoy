@@ -71,7 +71,6 @@ result.setResultCallback(new ResultCallback<PlaceLikelihoodBuffer>() {
 Places.GeoDataApi.getPlacePhotos(googleApiClient, idLugar).setResultCallback(new ResultCallback<PlacePhotoMetadataResult>() {
     @Override
     public void onResult(@NonNull PlacePhotoMetadataResult photos) {
-
         if (photos.getStatus().isSuccess()) {
             PlacePhotoMetadataBuffer photoMetadataBuffer = photos.getPhotoMetadata();
             if (photoMetadataBuffer.getCount() > 0) {
@@ -79,13 +78,13 @@ Places.GeoDataApi.getPlacePhotos(googleApiClient, idLugar).setResultCallback(new
                         .setResultCallback(new ResultCallback<PlacePhotoResult>() {
                             @Override
                             public void onResult(@NonNull PlacePhotoResult placePhotoResult) {
-                            if (placePhotoResult.getStatus().isSuccess()) {
-                                fotoImageView.setImageBitmap(placePhotoResult.getBitmap());
-                            } else {
-                                Toast.makeText(MainActivity.this, "Error obtener foto: " + placePhotoResult.getStatus().getStatusMessage(), Toast.LENGTH_SHORT).show();
+                                if (placePhotoResult.getStatus().isSuccess()) {
+                                    fotoImageView.setImageBitmap(placePhotoResult.getBitmap());
+                                } else {
+                                    Toast.makeText(MainActivity.this, "Error obtener foto: " + placePhotoResult.getStatus().getStatusMessage(), Toast.LENGTH_SHORT).show();
+                                }
                             }
-                        }
-                    });
+                        });
             } else {
                 Toast.makeText(MainActivity.this, "El lugar no tiene fotos", Toast.LENGTH_SHORT).show();
             }
