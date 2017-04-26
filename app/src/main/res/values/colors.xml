@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorAccent">#FFD740</color>
+
+    <color name="colorProbabilidadAlta">#00BFA5</color>
+    <color name="colorProbabilidadMedia">#1DE9B6</color>
+    <color name="colorProbabilidadBaja">#64FFDA</color>
+</resources>

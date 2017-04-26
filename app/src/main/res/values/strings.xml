@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">¿Dónde Estoy?</string>
+    <string name="calificacion">Calificación</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="ninguna">Ninguna</string>
+</resources>
